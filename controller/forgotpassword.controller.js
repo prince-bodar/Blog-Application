@@ -8,7 +8,7 @@ const User = require('../model/user.model')
 /***********************Forgot Password Page***********************/
 exports.forgotpasswordPage =async (req, res)=>{
     try {
-        res.render("forgotpassword.ejs");
+        res.redirect("forgotpassword.ejs");
     } catch (error) {
         console.log(error);
         res.json({messag: "Server error"});
